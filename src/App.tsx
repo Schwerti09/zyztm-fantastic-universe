@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { creatorProfile } from './data/creatorProfile'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="text-8xl md:text-[10rem] font-black tracking-tighter neon-text mb-6"
         >
-          ZYZTM
+          {creatorProfile.name.toUpperCase()}
         </motion.h1>
 
         <motion.p
@@ -22,7 +23,7 @@ function App() {
           transition={{ delay: 0.6 }}
           className="text-3xl md:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 mb-8"
         >
-          NEXUS 2026
+          {creatorProfile.tagline}
         </motion.p>
 
         <div className="glass rounded-3xl px-10 py-6 inline-block">
