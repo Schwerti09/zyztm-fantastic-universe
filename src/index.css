@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: radial-gradient(circle at 50% 50%, rgba(192, 38, 211, 0.08) 0%, rgba(34, 211, 238, 0.05) 50%, transparent 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.neon-text {
+  text-shadow: 
+    0 0 10px #C026D3,
+    0 0 20px #22D3EE,
+    0 0 40px #F472B6;
+}
